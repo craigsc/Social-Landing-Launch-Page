@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href={{ static_url("css/teaser.css") }}/>
+		<script type="text/javascript" src={{ static_url("js/jquery-1.5.min.js") }}></script>
+		<script type="text/javascript" src={{ static_url("js/jquery.placeholder.min.js") }}></script>
+		<script type="text/javascript" src={{ static_url("js/landing.js") }}></script>
+		<title>AppHorde | Coming Soon</title>
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-19925373-4']);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+	</head>
+	<body>
+		<div id="main">
+			<div align="center">
+				<img src={{ static_url("images/apphorde-huge.png") }}/>
+			</div>
+			<div id="tagline">
+				Marketing your apps has never been easier.
+			</div>
+			<div id="signup" align="center">
+				<i>Sign up for our private beta</i>
+				{% if error %}
+				<div style="color:red;">
+					Please supply a valid email to sign up.
+				</div>
+				{% end %}
+				<form method="post" action="/thanks" id="beta_signup">
+					<input class="fancy_input" type="text" id="email" name="email" placeholder="Email"/>
+					{% if ref %}
+					<input type="hidden" name="ref" value={{ escape(ref) }} />
+					{% end %}
+					<a id="signup_submit" class="go_button">Go</a>
+				</form>
+			</div>	
+		</div>
+	</body>
+</html>

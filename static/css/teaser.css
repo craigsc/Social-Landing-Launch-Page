@@ -1,0 +1,83 @@
+body {
+	background: #EEE;
+}
+
+#main {
+	width: 763px;
+	margin: auto;
+	margin-top: 150px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+
+#tagline {
+	margin: 20px 0;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#signup {
+	font-size: 16px;
+	margin: 60px 0;
+	color: #777;
+	font-weight: none;
+}
+
+#signup form {
+	margin: 5px;
+}
+
+#email {
+	width: 300px;
+	font-size: 18px;
+}
+
+.placeholder { color: #aaa; }
+
+.go_button {
+	background: #00BB00;
+	font-size: 18px;
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 5px 20px;
+	cursor: pointer;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.go_button:hover {
+	background: #008800;
+}
+
+.fancy_input {
+	background: #FFF;
+	width: 200px;
+	padding: 5px;
+	border: 1px solid #999;
+}
+
+#referrels {
+	margin: 30px 0;
+}
+
+#referrels input {
+	font-size: 18px;
+	width: 325px;
+	text-align: center;
+}
+
+#referrels p {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.FBConnectButton, .fb_share_size_Small, .fb_share_size_Small * {
+	vertical-align: top;
+	margin-top: 1px;
+}
+
+.fb_share_size_Small {
+	margin-right: 5px;
+}
